@@ -20,8 +20,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  latlng: any
-  cached_network_image: any
+  latlng:
+    git:
+      url: https://github.com/FluentChange/flutter_latlng.git
+  cached_network_image:
+    git:
+      url: https://github.com/bartektartanus/flutter_cached_network_image.git
+      ref: develop
   map:
     path: ../
 
@@ -34,7 +39,6 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
